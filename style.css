@@ -2,7 +2,12 @@ body{
 margin:0;
 overflow:hidden;
 background:black;
+font-family:Arial;
+}
+
+#ui{
+position:absolute;
 color:white;
-text-align:center;
-font-family:sans-serif;
+left:20px;
+top:10px;
 }
