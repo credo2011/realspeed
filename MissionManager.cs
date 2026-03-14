@@ -1,17 +1,28 @@
-using UnityEngine;
+function spawnEnemy(){
 
-public class MissionManager : MonoBehaviour
-{
-    public int moneyTarget = 100;
-    public int collectedMoney = 0;
+let enemy = document.createElement("img")
 
-    void Update()
-    {
-        collectedMoney = GameManager.instance.money;
+enemy.src = "https://i.imgur.com/7Qp1K6T.png"
+enemy.className = "enemy"
 
-        if(collectedMoney >= moneyTarget)
-        {
-            Debug.Log("Mission Complete !");
-        }
-    }
+enemy.style.left = Math.random()*window.innerWidth + "px"
+enemy.style.top = "-100px"
+
+document.body.appendChild(enemy)
+
+let move = setInterval(()=>{
+
+enemy.style.top = enemy.offsetTop + 5 + "px"
+
+if(enemy.offsetTop > window.innerHeight){
+
+enemy.remove()
+clearInterval(move)
+
 }
+
+},30)
+
+}
+
+setInterval(spawnEnemy,2000)
