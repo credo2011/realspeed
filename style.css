@@ -11,3 +11,10 @@ color:white;
 left:20px;
 top:10px;
 }
+#playerCar{
+width:60px;
+position:absolute;
+bottom:40px;
+left:50%;
+transform:translateX(-50%);
+}
