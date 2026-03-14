@@ -26,3 +26,88 @@ clearInterval(move)
 }
 
 setInterval(spawnEnemy,2000)
+function createEnemyCar(){
+
+let car = document.createElement("img")
+
+car.src = "https://i.imgur.com/7Qp1K6T.png"
+car.className = "enemyCar"
+
+car.style.position = "absolute"
+car.style.width = "60px"
+
+car.style.left = Math.random()*window.innerWidth + "px"
+car.style.top = "-100px"
+
+document.body.appendChild(car)
+
+let move = setInterval(function(){
+
+car.style.top = car.offsetTop + 5 + "px"
+
+if(car.offsetTop > window.innerHeight){
+
+car.remove()
+clearInterval(move)
+
+}
+
+},30)
+
+}function createEnemyCar(){
+
+let car = document.createElement("img")
+
+car.src = "https://i.imgur.com/7Qp1K6T.png"
+car.className = "enemyCar"
+
+car.style.position = "absolute"
+car.style.width = "60px"
+
+car.style.left = Math.random()*window.innerWidth + "px"
+car.style.top = "-100px"
+
+document.body.appendChild(car)
+
+let move = setInterval(function(){
+
+car.style.top = car.offsetTop + 5 + "px"
+
+if(car.offsetTop > window.innerHeight){
+
+car.remove()
+clearInterval(move)
+
+}function createEnemyCar(){
+
+let car = document.createElement("img")
+
+car.src = "https://i.imgur.com/7Qp1K6T.png"
+car.className = "enemyCar"
+
+car.style.position = "absolute"
+car.style.width = "60px"
+
+car.style.left = Math.random()*window.innerWidth + "px"
+car.style.top = "-100px"
+
+document.body.appendChild(car)
+
+let move = setInterval(function(){
+
+car.style.top = car.offsetTop + 5 + "px"
+
+if(car.offsetTop > window.innerHeight){
+
+car.remove()
+clearInterval(move)
+
+}
+
+},30)
+
+}
+
+},30)
+
+}
